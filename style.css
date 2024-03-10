@@ -1,0 +1,218 @@
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #efefef;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.input{
+  width: 50px; /* Ustaw szerokość */
+  height: 50px; /* Ustaw wysokość */
+  border: 2px solid gray;
+  margin: 5px;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+hr {
+  width: 40%; /* Ustaw szerokość linii na 50% szerokości dostępnej przestrzeni */
+  border: 1px solid black;
+}
+.tittle {
+  text-align: center;
+}
+.spiral{
+  display: flex;
+  justify-content: center;
+  font-size: 45px;
+  animation: spin 1.5s linear infinite;
+}
+@keyframes spin {
+  to{
+      transform: rotate(360deg);
+  }
+}
+.hidden{
+  visibility: hidden;
+}
+.wrong {
+  background-color: #888;
+  color: white; 
+}
+.close {
+  background-color: goldenrod;
+  color: white;
+}
+
+.correct{
+  background-color: darkgreen;
+  color: white;
+}
+.invalid {
+  animation: flash 1s;
+}
+
+/* flashes red border and then fades back to gray */
+@keyframes flash {
+  5% {
+    border-color: crimson;
+  }
+
+  100% {
+    border-color: #ccc;
+  }
+}
+.input1{
+  grid-area: i1;
+}
+.input2{
+  grid-area: i2;
+}
+.input3{
+  grid-area: i3;
+}
+.input4{
+  grid-area: i4;
+}
+.input5{
+  grid-area: i5;
+}
+.input6{
+  grid-area: i6;
+}
+.input7{
+  grid-area: i7;
+}
+.input8{
+  grid-area: i8;
+}
+.input9{
+  grid-area: i9;
+}
+.input10{
+  grid-area: i10;
+}
+.input11{
+  grid-area: i11;
+}
+.input12{
+  grid-area: i12;
+}
+.input13{
+  grid-area: i13;
+}
+.input14{
+  grid-area: i14;
+}
+.input15{
+  grid-area: i15;
+}
+.input16{
+  grid-area: i16;
+}
+.input17{
+  grid-area: i17;
+}
+.input18{
+  grid-area: i18;
+}
+.input19{
+  grid-area: i19;
+}
+.input20{
+  grid-area: i20;
+}
+.input21{
+  grid-area: i21;
+}
+.input22{
+  grid-area: i22;
+}
+.input23{
+  grid-area: i23;
+}
+.input24{
+  grid-area: i24;
+}
+.input25{
+  grid-area: i25;
+}
+.input26{
+  grid-area: i26;
+}
+.input27{
+  grid-area: i27;
+}
+.input28{
+  grid-area: i28;
+}
+.input29{
+  grid-area: i29;
+}
+.input30{
+  grid-area: i30;
+}
+/* winner animation */
+
+@keyframes rainbow {
+  100%,
+  0% {
+    color: rgb(255, 0, 0);
+  }
+  8% {
+    color: rgb(255, 127, 0);
+  }
+  16% {
+    color: rgb(255, 255, 0);
+  }
+  25% {
+    color: rgb(127, 255, 0);
+  }
+  33% {
+    color: rgb(0, 255, 0);
+  }
+  41% {
+    color: rgb(0, 255, 127);
+  }
+  50% {
+    color: rgb(0, 255, 255);
+  }
+  58% {
+    color: rgb(0, 127, 255);
+  }
+  66% {
+    color: rgb(0, 0, 255);
+  }
+  75% {
+    color: rgb(127, 0, 255);
+  }
+  83% {
+    color: rgb(255, 0, 255);
+  }
+  91% {
+    color: rgb(255, 0, 127);
+  }
+}
+
+.winner {
+  animation: rainbow 4s infinite linear;
+}
+
+.object{
+  display: grid;
+  justify-content: center;
+  grid-area: object;
+  grid-template-areas: 
+  "i1  i2  i3  i4  i5"
+  "i6  i7  i8  i9  i10"
+  "i11 i12 i13 i14 i15"
+  "i16 i17 i18 i19 i20"
+  "i21 i22 i23 i24 i25"
+  "i26 i27 i28 i29 i30"
+}
